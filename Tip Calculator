@@ -1,0 +1,22 @@
+#include <stdio.h>
+int tip;
+int tipc(int n) 
+{
+    tip=(5*n)/100;
+    return tip;
+}
+int main()
+{
+    int t;
+    printf("Enter the number of cases:\n");
+    scanf("%d", &t);
+    while(t--)
+    {
+        int n;
+        printf("Enter the amount to be paid:\n");
+        scanf("%d", &n);
+        tipc(n);
+        printf("%d is the tip calculated and total amount to be paid is %d\n", tip, tip+n);
+    }
+    return 0;
+}
